@@ -23,6 +23,9 @@ html, body {
 @media only screen and (max-width: 768px) {
 /* For mobile phones: */
 
+body {
+  position: relative;
+}
 
 i {
 font-family: FontAwesome;
@@ -51,9 +54,9 @@ font-family: FontAwesome;
 
 .resto_image  {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
     object-fit: cover;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .container {
@@ -103,11 +106,15 @@ h1, .fah {
     border-radius: 40px;
     background-color:rgb(251, 247, 247);
     
-    position: absolute;
-    top: 50%;
+    /* position: relative;
+    top: 20%;
     width: 100%;
-    height: 100%; 
+    height: auto;  */
+    position: absolute;
+    width: 100%;
     padding-top: 5%;
+    margin-top: -5%;
+    z-index: 9999;
 }
  
 .fa {
@@ -161,7 +168,7 @@ h1, .fah {
     position: relative;
     overflow: hidden;
     z-index: 0;
-    width: 50%;
+    width: 85%;
     height: 100px;
     box-shadow: -1px 6px 10px 2px rgba(166, 166, 166, 0.34);
     border-radius: 25px;
@@ -280,11 +287,11 @@ to {
 .menu-card h2 {
   z-index: 2;
   position: relative;
-  font-weight: 800;
-  font-size: 20px;
+  font-weight: 200;
+  font-size: 18px;
   margin: 0;
   margin-left: 2%;
-  margin-top: 4%;
+  margin-top: 2%;
   margin-right: 25%;
   white-space: nowrap;
   overflow: hidden;
@@ -297,8 +304,7 @@ to {
   overflow: hidden;
   word-wrap: break-word;
   text-overflow: ellipsis;
-  margin-right: 35%;
-}
+ }
 
 .menu-card_validate {
   position: absolute;
@@ -345,7 +351,8 @@ to {
 
 .menu-card_title  {
   position: relative;
-  text-overflow: ellipsis;
+  margin-top: 5%; 
+ text-overflow: ellipsis;
 }
 
 .price {
@@ -365,7 +372,7 @@ to {
   position: absolute;
   top: 54%;
   bottom: 3.5%;
-  left: 80%;
+  left: 90%;
   overflow: hidden;
 }
 
@@ -398,7 +405,7 @@ to {
     border-bottom-width: 5px;
     margin-bottom: 1%;
     margin-top: 10%;
-    margin-left: 7%;
+    margin-left: 2%;
   }
   .entree_container2 h2 {
     font-size: 25px;
@@ -409,7 +416,7 @@ to {
     border-bottom-width: 5px;
     margin-bottom: 1%;
     margin-top: 10%;
-    margin-left: 7%;
+    margin-left: 2%;
   }
 
   .entree_container3 h2 {
@@ -421,7 +428,7 @@ to {
   border-bottom-width: 5px;
   margin-bottom: 1%;
   margin-top: 10%;
-  margin-left: 7%;
+  margin-left: 2%;
 }
 
   .button10 {
@@ -431,7 +438,7 @@ to {
   border-radius: 20px;
   height: 80px;
   width: 285px;
-  margin-left: 15%;
+  margin-left: 25%;
   margin-bottom: 20%;
   margin-top: 20%;
   color: white;
@@ -450,8 +457,8 @@ to {
 footer {
   background-color: rgb(51, 54, 54);
   width: 100%;
-  position: absolute;
-  bottom: -330%;
+  position: absolute; 
+  bottom: -350%;
 }
 
 
@@ -485,7 +492,7 @@ li {
 .icone_resto {
   display: flex;
   flex-direction:row;
-  margin-right: 65%;
+  margin-right: 45%;
   align-items: baseline;
 }
 
