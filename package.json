@@ -1,0 +1,19 @@
+{
+  "name": "essai1",
+  "version": "1.0.0",
+  "description": "test de l'essai1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/soulef77/Openclassrooms_Projects.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/soulef77/Openclassrooms_Projects/issues"
+  },
+  "homepage": "https://github.com/soulef77/Openclassrooms_Projects#readme"
+}
