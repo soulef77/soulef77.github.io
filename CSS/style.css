@@ -39,10 +39,10 @@ a {
 
 .logo  {
    text-align: center;
-   padding-left: 38%;
+   padding-left: 33%;
    padding-bottom: 5%;
    padding-top: 5%;
-   width: 20%;
+   width: 30%;
  }
 
 .localisation_container {
@@ -60,7 +60,7 @@ a {
     float: left;
     margin-top: 10px;
     margin-right: 5px;
-    margin-left: 30%;
+    margin-left: 33%;
  }
  
  h1 {
@@ -77,7 +77,7 @@ a {
   }
 
   .search_localisation h1 {
-     margin-left: 5%;
+     margin-left: 3%;
   }
 
   .presentation_container {
@@ -104,7 +104,7 @@ a {
       border-radius: 20px;
       height: 50px;
       width: 225px;
-      margin-left: 3%;
+      margin-left: 1%;
       margin-bottom: 15%;
       margin-top: 5%;
       color: white;
@@ -134,7 +134,7 @@ a {
       width: 78%;
       border-radius: 15px;
       margin: 0;
-      margin-left: 20%;
+      margin-left: 10%;
       margin-top: 15%;
       text-align: center;
       justify-content: space-evenly;
@@ -148,7 +148,7 @@ a {
       width: 78%;
       border-radius: 15px;
       margin: 0;
-      margin-left: 20%;
+      margin-left: 10%;
       margin-top: 5%;
  }
 
@@ -160,7 +160,7 @@ a {
       width: 78%;
       border-radius: 15px;
       margin: 0;
-      margin-left: 20%;
+      margin-left: 10%;
       margin-top: 5%;
       margin-bottom: 10%;
  }
@@ -185,27 +185,23 @@ a {
     margin-left: 25%;
   }
 
- .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 35%;
-} 
-.fac {
-      float: left;
-      position: relative;
-      top: 22%;
-      left: 15%;
-      color: darkgray;
-}
+  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 35%;
+  }
 
-.far {
-      float: left;
-      position: relative;
-      top: 18%;
-      left: 15%;
-      color: purple;
-}
+  .fac {
+        float: left;
+        position: relative;
+        top: 22%;
+        left: 18%;
+        color: darkgray;
+  }
 
-.page {
-     /* max-width: 700px; */
- 
+  .far {
+        float: left;
+        position: relative;
+        top: 18%;
+        left: 18%;
+        color: purple;
   }
 
   .container_section {
@@ -333,59 +329,59 @@ a {
     color: black;
  }
 
- .fahe1 {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 46%;
-  color: black;
-}
+  .fahe1 {
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 46%;
+    color: black;
+  }
 
-.fahe2 {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 71%;
-  color: black;
-}
+  .fahe2 {
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 71%;
+    color: black;
+  }
 
-.fahe3 {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 95%;
-  color: black;
-}
+  .fahe3 {
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 95%;
+    color: black;
+  }
 
-.fah_white1 {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 46%;
-  color: black;
-  background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
+  .fah_white1 {
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 46%;
+    color: black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
-.fah_white2 {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 71%;
-  color: black;
-  background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
- 
-.fah_white3 {
-  float: right;
-  position: absolute;
-  left: 70%;
-  top: 95%;
-  color: black;
-  background-clip: text;
-   -webkit-text-fill-color: transparent;
-}
+  .fah_white2 {
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 71%;
+    color: black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  
+  .fah_white3 {
+    float: right;
+    position: absolute;
+    left: 70%;
+    top: 95%;
+    color: black;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
 
 
   .fah_pink:hover {
@@ -541,7 +537,7 @@ a {
 
   footer {
       position: absolute;
-      bottom: -370%;
+      bottom: -360%;
       background-color: rgb(51, 54, 54);
       width: 100%;
       /* text-align: center; */
@@ -555,7 +551,7 @@ a {
 }
 
 .footer_logo {
-    width: 20%;
+    width: 30%;
     color: #fff;
     filter: invert(100%);
     margin-bottom: 2%;
@@ -586,6 +582,11 @@ li {
     flex-direction:row;
     column-gap: 3%;
     color: #fff;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
 }
 
 

@@ -99,7 +99,7 @@ h1, .fah {
 }
 
  .fah {
-   margin-left: 25%;
+   margin-left: 15%;
 }
 
 .first_container {
@@ -113,7 +113,7 @@ h1, .fah {
     position: absolute;
     width: 100%;
     padding-top: 5%;
-    margin-top: -5%;
+    margin-top: -7%;
     z-index: 9999;
 }
  
@@ -391,7 +391,7 @@ to {
     
   i {
     margin-right: 5%;
-    margin-top: 5%;
+    /* margin-top: 5%; */
     border-radius: 20px;
   }
 
@@ -465,10 +465,11 @@ footer {
 .footer_menu  {
   display: flex;
   flex-direction: column;
+  row-gap: 13px;
 }
 
 .footer_logo {
-  width: 20%;
+  width: 30%;
   color: #fff;
   filter: invert(100%);
   margin-bottom: 2%;
@@ -486,22 +487,22 @@ li {
 .fa_resto{
   float: left;
   color: #fff;
-  justify-content: baseline;
+  align-items:flex-start;
 }
 
 .icone_resto {
   display: flex;
   flex-direction:row;
   margin-right: 45%;
-  align-items: baseline;
+  align-items:flex-start;
 }
 
 .icone_partenariat {
   display: flex;
   flex-direction:row;
   color: #fff;
-  margin-right: 65%;
-  align-items: baseline;
+  margin-right: 45%;
+  align-items: flex-start;
 }
 
 a {
