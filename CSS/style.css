@@ -42,7 +42,7 @@ a {
    padding-left: 30%;
    padding-bottom: 5%;
    padding-top: 5%;
-   width: 40%;
+   width: 35%;
  }
 
 .localisation_container {
@@ -182,10 +182,10 @@ a {
   }
 
   h2 {
-    margin-left: 28%;
+    margin-left: 30%;
   }
 
-  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 45%;
+  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 41%;
   }
 
   .fac {
@@ -233,7 +233,7 @@ a {
   }
 
   .resto_image {
-      width: 90%;
+      width: 95%;
       height: 200px;
       max-height: 100%;
       min-height: 100%;
@@ -263,7 +263,7 @@ a {
       background-color: hwb(0 90% 5%);
       border: 0px solid transparent;
       box-shadow: 0px 6px 6px 6px #0000002e;
-      width: 90%;
+      width: 95%;
       height: auto;
       height: 80px;
       max-height: 100%;
