@@ -131,7 +131,7 @@ a {
       background: rgb(243, 242, 243);
       box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
       height: 90px;
-      width: 85%;
+      width: 90%;
       border-radius: 15px;
       margin: 0;
       margin-left: 5%;
@@ -145,7 +145,7 @@ a {
       background: rgb(243, 242, 243);
       box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
       height: 90px;
-      width: 85%;
+      width: 90%;
       border-radius: 15px;
       margin: 0;
       margin-left: 5%;
@@ -157,7 +157,7 @@ a {
       background: rgb(244, 236, 244);
       box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
       height: 90px;
-      width: 85%;
+      width: 90%;
       border-radius: 15px;
       margin: 0;
       margin-left: 5%;
@@ -185,7 +185,7 @@ a {
     margin-left: 28%;
   }
 
-  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 35%;
+  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 45%;
   }
 
   .fac {
