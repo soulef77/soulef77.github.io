@@ -1,10 +1,10 @@
 {
-  "name": "essai1",
+  "name": "test1",
   "version": "1.0.0",
   "description": "test de l'essai1",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./dart-sass/sass/style.scss:.public/css/style.css"
   },
   "repository": {
     "type": "git",
