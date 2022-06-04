@@ -57,16 +57,18 @@ a {
 }
 
 .fas {
+    color: black;
     float: left;
     margin-top: 10px;
     margin-right: 5px;
     margin-left: 30%;
+    font-size: 25px;
  }
  
  h1 {
     color: black;
-    font-size: 20px;
-    font-weight: 200;
+    font-size: 25px;
+    font-weight: 800;
   }
 
   .search_localisation {
@@ -130,11 +132,11 @@ a {
       color: black;
       background: rgb(243, 242, 243);
       box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
-      height: 90px;
-      width: 90%;
-      border-radius: 15px;
+      height: 80px;
+      width: 80%;
+      border-radius: 20px;
       margin: 0;
-      margin-left: 5%;
+      margin-left: 8%;
       margin-top: 15%;
       text-align: center;
       justify-content: space-evenly;
@@ -144,11 +146,11 @@ a {
       color: black;
       background: rgb(243, 242, 243);
       box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
-      height: 90px;
-      width: 90%;
-      border-radius: 15px;
+      height: 80px;
+      width: 80%;
+      border-radius: 20px;
       margin: 0;
-      margin-left: 5%;
+      margin-left: 8%;
       margin-top: 5%;
  }
 
@@ -156,11 +158,11 @@ a {
       color: black;
       background: rgb(244, 236, 244);
       box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
-      height: 90px;
-      width: 90%;
-      border-radius: 15px;
+      height: 80px;
+      width: 80%;
+      border-radius: 20px;
       margin: 0;
-      margin-left: 5%;
+      margin-left: 8%;
       margin-top: 5%;
       margin-bottom: 10%;
  }
@@ -182,25 +184,28 @@ a {
   }
 
   h2 {
-    margin-left: 30%;
+    margin-left: 10%;
   }
 
-  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 41%;
+  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 50%;
+  }
+
+  .round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 49%;
   }
 
   .fac {
         float: left;
         position: relative;
-        top: 22%;
-        left: 19%;
+        top: 30%;
+        left: 12%;
         color: darkgray;
   }
 
   .far {
         float: left;
         position: relative;
-        top: 18%;
-        left: 17%;
+        top: 30%;
+        left: 12%;
         color: purple;
   }
 
@@ -211,6 +216,14 @@ a {
   .container {
       position: absolute;
       left: 20%;
+  }
+
+  .cont_col {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+    column-gap: 250px;
+    flex: 1 1 100%;
   }
 
   .cont {
@@ -233,10 +246,12 @@ a {
   }
 
   .resto_image {
-      width: 95%;
+      display: block;
+      width: 120%;
       height: 200px;
       max-height: 100%;
       min-height: 100%;
+      box-shadow: 6px 0px 6px 0px #0000002e;
       border-radius: 20px 20px 0px 0px;
       object-fit: cover;
    }
@@ -258,12 +273,12 @@ a {
    }
 
   .text {
-    display: flex;
-    flex-direction: column;
+      display: flex;
+      flex-direction: column;
       background-color: hwb(0 90% 5%);
       border: 0px solid transparent;
       box-shadow: 0px 6px 6px 6px #0000002e;
-      width: 95%;
+      width: 120%;
       height: auto;
       height: 80px;
       max-height: 100%;
@@ -295,13 +310,15 @@ a {
   }
 
   .resto_image_note  {
+      display: block;
       text-align: center;
       flex-direction: column;
-      width: 95%;
+      width: 120%;
       height: 200px;
       max-height: 100%;
       min-height: 100%;
       object-fit: cover;
+      box-shadow: 6px 0px 6px 0px #0000002e;
       border-radius: 20px 20px 0px 0px;
       overflow: hidden;
     
@@ -311,6 +328,7 @@ a {
       flex-direction: column;
       justify-content: space-evenly;
       row-gap: 25px;
+      column-gap: 50px;
   }
 
   .fah {
@@ -537,7 +555,7 @@ a {
 
   footer {
       position: absolute;
-      bottom: -360%;
+      bottom: -520%;
       background-color: rgb(51, 54, 54);
       width: 100%;
       /* text-align: center; */
@@ -614,15 +632,15 @@ a {
     height: 100%;
     z-index: 1001; 
     top: 50%;
-    left: 50%;
+    left: 35%;
     margin: -25px 0 0 -25px;
     border: 3px solid #f3f3f3;
     border-top: 3px solid #9356DC;
     border-bottom: 3px solid #99E2D0;
     border-radius: 50%;
-    border-width: 10px;
-    width: 50px;
-    height: 50px;
+    border-width: 15px;
+    width: 100px;
+    height: 100px;
     opacity: 1;
     animation-name: spin;
     -webkit-animation-name: spin;
@@ -755,10 +773,10 @@ a {
   
   .fas {
       float: left;
-      margin-top: 10px;
+      margin-top: 23px;
       margin-right: 5px;
-      margin-left: 40%;
-      font-size: 48px;
+      margin-left: 35%;
+      font-size: 34px;
       color: black; 
       background-color: rgb(247, 244, 244);
       display: inline;
@@ -833,12 +851,13 @@ a {
       color: black;
       margin: 0;
       margin-left: 19%;
-  }
+    }
 
     .button_container {
       display: flex;
       flex-direction: column;
- }
+    }
+
     .button1 {
         color: black;
         background: rgb(243, 242, 243);
@@ -865,7 +884,7 @@ a {
         margin-top: 25%;
   }
 
-  .button3 {
+      .button3 {
         color: black;
         background: rgb(244, 236, 244);
         box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
@@ -898,9 +917,12 @@ a {
       margin-left: 30%;
     }
 
+      
+    .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 44%;
+    }
     
-  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 5%; bottom: 44%;
-  }
+    .round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 49%;
+    }
 
   .fac {
         float: left;
@@ -931,8 +953,9 @@ a {
   .container {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     position: absolute;
-    left: 20%;
+    left: 4.5%;
   }
 
   .cont_col {
@@ -964,10 +987,12 @@ a {
   }
 
   .resto_image {
+      display: block;
       width: 150%;
       height: 200px;
       max-height: 100%;
       min-height: 100%;
+      box-shadow: 6px 0px 6px 0px #0000002e;
       border-radius: 20px 20px 0px 0px;
       object-fit: cover;
    }
@@ -1019,11 +1044,13 @@ a {
     
   }
 
-  .resto_image_note  {
+  .resto_image_note {
+    display: block;
     width: 150%;
     height: 200px;
     max-height: 100%;
     min-height: 100%;
+    box-shadow: 6px 0px 6px 0px #0000002e;
     border-radius: 20px 20px 0px 0px;
     object-fit: cover;
     
@@ -1256,11 +1283,13 @@ a {
     left: 102%;
       
   }
-  footer {
-      position: absolute;
-      bottom: -350%;
-      background-color: rgb(51, 54, 54);
+
+  footer { 
       width: 100%;
+      position: absolute;
+      bottom: -450%;
+      background-color: rgb(51, 54, 54);
+     
       /* text-align: center; */
       
   }
@@ -1335,15 +1364,15 @@ a {
     height: 100%;
     z-index: 1001; 
     top: 50%;
-    left: 50%;
+    left: 40%;
     margin: -25px 0 0 -25px;
     border: 3px solid #f3f3f3;
     border-top: 3px solid #9356DC;
     border-bottom: 3px solid #99E2D0;
     border-radius: 50%;
-    border-width: 10px;
-    width: 50px;
-    height: 50px;
+    border-width: 15px;
+    width: 100px;
+    height: 100px;
     opacity: 1;
     animation-name: spin;
     -webkit-animation-name: spin;
@@ -1520,10 +1549,11 @@ h1 {
     font-size: 25px;
     margin: 0;
 }
-  .presentation_container h2 {
-    margin: 0;
-    font-size: 25px;
-  }
+
+.presentation_container h2 {
+  margin: 0;
+  font-size: 25px;
+}
 
 .presentation_container, h3 {
     font-weight: 100;
@@ -1560,18 +1590,21 @@ h4 {
 
 .button_container {
   display: flex;
-
+  flex-direction: column;
+  flex: 1 1 100%;
 }
+
+
 
 .button1 {
     color: black;
     background: rgb(243, 242, 243);
     box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
     height: 90px;
-    width: 93%;
+    width: 45%;
     border-radius: 15px;
     margin: 0;
-    margin-left: 2%;
+    margin-left: 5%;
     margin-top: 15%;
     text-align: center;
     justify-content: space-evenly;
@@ -1582,10 +1615,10 @@ h4 {
     background: rgb(243, 242, 243);
     box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
     height: 90px;
-    width: 93%;
+    width: 45%;
     border-radius: 15px;
     margin: 0;
-    margin-left: 4%;
+    margin-left: 20%;
     margin-top: 5%;
 }
 
@@ -1594,10 +1627,10 @@ h4 {
     background: rgb(244, 236, 244);
     box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
     height: 90px;
-    width: 93%;
+    width: 45%;
     border-radius: 15px;
     margin: 0;
-    margin-left: 4%;
+    margin-left: 42%;
     margin-top: 5%;
     margin-bottom: 10%;
 }
@@ -1623,7 +1656,9 @@ h2 {
   margin-top: 10%;
 }
 
-.round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 10%; bottom: 55%;
+.round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 10%; bottom: 49%;
+}
+.round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 10%; bottom: 49%;
 }
 
 .fac {
@@ -1656,7 +1691,7 @@ h2 {
   display: flex;
   flex-direction: row;
   position: absolute;
-  left: 7%;
+  left: 2%;
 }
 
 .cont_col {
@@ -1692,6 +1727,7 @@ h2 {
   height: 200px;
   max-height: 100%;
   min-height: 100%;
+  box-shadow: 6px 0px 6px 0px #0000002e;
   border-radius: 20px 20px 0px 0px;
   object-fit: cover;
 }
@@ -1754,15 +1790,19 @@ h2 {
   max-height: 100%;
   min-height: 100%;
   object-fit: cover;
+  box-shadow: 6px 0px 6px 0px #0000002e;
   border-radius: 20px 20px 0px 0px;
   overflow: hidden;
 
 }
+
 .container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   row-gap: 150px;
+  position: absolute;
+  left: 4%;
 }
 
 .fah {
@@ -1989,7 +2029,7 @@ left: 88%;
 
 footer {
   position: absolute;
-  bottom: -360%;
+  bottom: -460%;
   background-color: rgb(51, 54, 54);
   width: 100%;
   /* text-align: center; */
@@ -2072,9 +2112,9 @@ border: 3px solid #f3f3f3;
 border-top: 3px solid #9356DC;
 border-bottom: 3px solid #99E2D0;
 border-radius: 50%;
-border-width: 10px;
-width: 50px;
-height: 50px;
+border-width: 15px;
+width: 100px;
+height: 100px;
 opacity: 1;
 animation-name: spin;
 -webkit-animation-name: spin;
