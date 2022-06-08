@@ -108,7 +108,7 @@ html, body {
 
   .fah {
     display: inline;
-    margin-left: 10%;
+    margin-left: 24%;
   }
 
   .first_container {
@@ -236,43 +236,43 @@ html, body {
     -ms-transition:all 0.5s ease;
     transition:all 0.5s ease ;
     transition-delay: 15ms; */
-    animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
   }
 
   #menu2 {
-    animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
   }
 
   #menu3 {
-    animation: delay-load 0.5s ease-in-out 0.6s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.6s 1 forwards;
   }
 
   #menu4 {
-    animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
   }
 
   #menu5 {
-    animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
   }
 
   #menu6 {
-    animation: delay-load 0.5s ease-in-out 0.6s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.6s 1 forwards;
   }
 
   #menu7 {
-    animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
   }
 
   #menu8 {
-    animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
   }
 
   #menu9 {
-    animation: delay-load 0.5s ease-in-out 0.8s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.8s 1 forwards;
   }
 
   #menu10 {
-    animation: delay-load 0.5s ease-in-out 0.8s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.8s 1 forwards;
   }
 
   /* ANIMATION-apparition progressive */
@@ -436,7 +436,7 @@ html, body {
     width: 50%;
     margin-left: 25%;
     margin-bottom: 20%;
-    margin-top: 320%;
+    margin-top: 290%;
     color: white;
     font-weight: 600;
     font-size: 20px;
@@ -452,7 +452,7 @@ html, body {
     background-color: rgb(51, 54, 54);
     width: 100%;
     position: absolute;
-    bottom: -650%;
+    bottom: -500%;
   }
 
   .footer_menu {
@@ -578,7 +578,7 @@ h1, .fah {
 }
 
 .fah {
- margin-left: 15%;
+ margin-left: 31%;
 }
 
 .first_container {
@@ -700,41 +700,41 @@ h1, .fah {
   transition:all 0.5s ease ;
   transition-delay: 15ms; */
 
-    animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
 }
 #menu2 {
-    animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
 }
 
 #menu3 {
-  animation: delay-load 0.5s ease-in-out 0.6s 1 forwards;
+  animation: delay-load 0.9s ease-in-out 0.6s 1 forwards;
 }
 
 #menu4 {
-    animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
 }
 
 #menu5 {
-    animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
 }
 
 #menu6 {
-    animation: delay-load 0.5s ease-in-out 0.6s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.6s 1 forwards;
 }
 
 #menu7 {
-  animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+  animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
 }
 
 #menu8 {
-  animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+  animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
 }
 #menu9 {
-  animation: delay-load 0.5s ease-in-out 0.8s 1 forwards;
+  animation: delay-load 0.9s ease-in-out 0.8s 1 forwards;
 }
 
 #menu10 {
-  animation: delay-load 0.5s ease-in-out 0.8s 1 forwards;
+  animation: delay-load 0.9s ease-in-out 0.8s 1 forwards;
 }
 
         /* ANIMATION-apparition progressive */
@@ -829,18 +829,24 @@ to {
 .menu-card:hover .menu-card_validate i {
   animation: rotate 0.4s linear 2;
   animation-delay: 0.3S;
+  box-sizing: border-box;
 }
 .menu-card_content {
   width: 100%;
   transition: 0.8s ease-in-out;
+ 
 }
+
 .menu-card_content:hover {
+ 
   width: calc(100% - 100px);
   transition: 0.7s ease-in-out;
 }
 
 .menu-card_title  {
   position: relative;
+  margin-top: 5%;
+  margin-bottom: 5%;
   text-overflow: ellipsis;
   justify-content: first baseline;
 }
@@ -929,7 +935,7 @@ to {
   width: 24%;
   margin-left: 36%;
   margin-bottom: 20%;
-  margin-top: 65%;
+  margin-top: 75%;
   color: white;
   font-weight: 600;
   font-size: 20px;
@@ -947,7 +953,7 @@ footer {
   background-color: rgb(51, 54, 54);
   width: 100%;
   position: absolute; 
-  bottom: -550%;
+  bottom: -350%;
 }
 
 
@@ -1087,7 +1093,7 @@ a {
   }
   
    .fah {
-     margin-left: 15%;
+     margin-left: 36%;
   }
   
   .first_container {
@@ -1101,7 +1107,7 @@ a {
   }
 
   .row_container { 
-      flex: 1 1 50%;
+      flex: 1 1 45%;
   }
    
   .fa {
@@ -1218,49 +1224,49 @@ a {
     transition:all 0.5s ease ;
     transition-delay: 15ms; */
       width: 55%;
-      margin-top: 20%;
-      animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+      margin-top: 25%;
+      animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
   }
   #menu2 {
       width: 55%;
-      animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+      animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
   }
   
   #menu3 {
     width: 63%;
     margin-top: 24%;
-    animation: delay-load 0.5s ease-in-out 0.6s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 0.2s 1 forwards;
   }
   
   #menu4 {
       width: 63%;
       margin-top: 12%;
-      animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+      animation: delay-load 0.9s ease-in-out 0.4s 1 forwards;
   }
   
   #menu5 {
       margin-top: 5%;
-      animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+      animation: delay-load 0.9s ease-in-out 0.6s 1 forwards;
   }
   
   #menu6 {
       margin-top: 5%;
-      animation: delay-load 0.5s ease-in-out 0.6s 1 forwards;
+      animation: delay-load 0.9s ease-in-out 0.8s 1 forwards;
   }
   
   #menu7 {
     margin-top: 5%;
-    animation: delay-load 0.5s ease-in-out 0.2s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 1.0s 1 forwards;
   }
   
   #menu8 {
-    animation: delay-load 0.5s ease-in-out 0.4s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 1.2s 1 forwards;
   }
   #menu9 {
-    animation: delay-load 0.5s ease-in-out 0.8s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 1.4s 1 forwards;
   }
   #menu10 {
-    animation: delay-load 0.5s ease-in-out 0.10s 1 forwards;
+    animation: delay-load 0.9s ease-in-out 1.6s 1 forwards;
   }
   
           /* ANIMATION-apparition progressive */
@@ -1472,7 +1478,7 @@ a {
     background-color: rgb(51, 54, 54);
     width: 100%;
     position: absolute; 
-    bottom: -580%;
+    bottom: -350%;
   }
   
   
