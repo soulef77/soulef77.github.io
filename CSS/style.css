@@ -152,6 +152,8 @@ a {
       margin: 0;
       margin-left: 8%;
       margin-top: 5%;
+      text-align: center;
+      justify-content: space-evenly;
  }
 
  .button3 {
@@ -165,50 +167,54 @@ a {
       margin-left: 8%;
       margin-top: 5%;
       margin-bottom: 10%;
+      text-align: center;
+      justify-content: space-evenly;
  }
 
- .button1, h2 {
+ .button1 h2 {
+      color: black;
       font-size: 20px;
-      margin-top: 3%;
+      margin-top: 2%;
       font-weight: 650;
  }
 
- .button2, h2 {
+ .button2 h2 {
+      color: black;
       font-size: 20px;
-      margin-top: 7%;
+      margin-top: 2%;
  } 
 
-  .button3, h2 {
+  .button3 h2 {
+      color: black;
       font-size: 20px;
-      margin-top: 7%;
+      margin-top: 2%;
   }
 
   h2 {
     margin-left: 25%;
   }
 
-  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 50%;
-  }
-
-  .round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 49%;
-  }
+  .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; margin-bottom: -7%;
+    margin-top: 3%; margin-left: -14%;}
   
-  .round3 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 49%;
+
+  .round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; margin-bottom: -7%;
+    margin-top: 3%; margin-left: -14%;}
+  
+  
+  
+  .round3 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: absolute; left: -4%; bottom: -34%;
   }
 
   .fac {
         float: left;
-        position: relative;
-        top: 30%;
-        left: 12%;
+        margin-top: -1%;
         color: darkgray;
   }
 
   .far {
         float: left;
-        position: relative;
-        top: 30%;
-        left: 12%;
+        margin-top: -1%;
         color: purple;
   }
 
@@ -382,7 +388,8 @@ a {
     top: 47%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .fah_white2 {
@@ -392,7 +399,8 @@ a {
     top: 70%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
   }
   
   .fah_white3 {
@@ -402,7 +410,8 @@ a {
     top: 95%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
 
@@ -460,32 +469,33 @@ a {
     top: 22%;
     color: black;
     background-clip: text;
-     -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
   }
 
   .fah_white:hover {
-    color: #431b1b;
+    color: #6c185e;
     animation-name: color;
     animation-duration: 7s;
     animation-iteration-count: 1;
    }
 
    .fah_white1:hover {
-    color: #431b1b;
+    color: #a72791;
     animation-name: color;
     animation-duration: 7s;
     animation-iteration-count: 1;
    }
 
    .fah_white2:hover {
-    color: #431b1b;
+    color: #861a72;
     animation-name: color;
     animation-duration: 7s;
     animation-iteration-count: 1;
    }
   
    .fah_white3:hover {
-    color: #431b1b;
+    color: #9d197e;
     animation-name: color;
     animation-duration: 7s;
     animation-iteration-count: 1;
@@ -498,14 +508,12 @@ a {
     50% {
       opacity: 0.5;
       background-image: linear-gradient(100deg, #9356DC, #FF79DA);
-      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     100% {
       opacity: 1;
       background-image: linear-gradient(100deg, #9356DC, #FF79DA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent;
     }
   }
   
@@ -599,11 +607,21 @@ li {
     column-gap: 3%;
 }
 
+.fa_resto, .icone_resto {
+   display: inline;
+   margin-right: 5px;
+}
+
 .icone_partenariat {
     display: flex;
     flex-direction:row;
     column-gap: 3%;
     color: #fff;
+}
+
+.icone_partenariat, .fa-solid {
+  display: inline;
+  margin-right: 5px;
 }
 
 a {
@@ -617,7 +635,7 @@ a {
 /*  ANIMATION - loader  */
 .loader {
     width: 100%;
-    top: 50;
+    top: 50%;
     left: 0;
     opacity: 1;
     position: fixed;
@@ -647,42 +665,34 @@ a {
     height: 100px;
     opacity: 1;
     animation-name: spin;
-    -webkit-animation-name: spin;
     animation-duration: 1200ms;
-    -webkit-animation-duration: 1200ms;
     animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
     animation-iteration-count: 2;
-    -webkit-animation-iteration-count: 2;
     animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+    
   }
   
-  @-webkit-keyframes spin {
+  /* @-webkit-keyframes spin {
     0% {
       transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
       overflow: hidden;
     }
     100% {
       transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
       visibility: hidden;
     }
-  }
+  } */
   
   @keyframes spin {
     0% {
         
       transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
       overflow: hidden;
     }
     100% {
         
       transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
-      visibility: hidden;
+       visibility: hidden;
     }
   }
   /*  ANIMATION - Page blanche Loader */
@@ -888,8 +898,11 @@ a {
         border-radius: 15px;
         margin: 0;
         margin-left: 35%;
-        margin-top: 25%;
-  }
+        margin-top: 7%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+  
 
       .button3 {
         color: black;
@@ -902,22 +915,33 @@ a {
         margin-left: 35%;
         margin-top: 5%;
         margin-bottom: 10%;
+        text-align: center;
+        justify-content: space-evenly;
+    }
+  
+
+  .button1 h2 {
+    color: black;
+    font-size: 20px;
+    margin-top: -34%;
+    margin-left: 26%;
+    font-weight: 650;
   }
 
-  .button1, h2 {
-        font-size: 22px;
-        margin-top: 3%;
-        font-weight: 650;
-  }
-
-  .button2, h2 {
-        font-size: 22px;
-        margin-top: 7%;
+  .button2 h2 {
+    color: black;
+    font-size: 20px;
+    margin-top: -34%;
+    margin-left: 26%;
+    font-weight: 650;
   } 
 
-    .button3, h2 {
-        font-size: 22px;
-        margin-top: 7%;
+    .button3 h2 {
+      color: black;
+      font-size: 20px;
+      margin-top: -34%;
+      margin-left: 26%;
+      font-weight: 650;
     }
 
     h2 {
@@ -925,28 +949,27 @@ a {
     }
 
       
-    .round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 41%;
-    }
+    .round { font: 27px Arial, sans-serif; width: 2em; height:2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2.3em; margin-bottom: 25%;
+      margin-top: 3%; margin-left: -15%;}
     
-    .round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 41%;
+    
+    .round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: -24%; bottom: 14%;
     }
 
-    .round3 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 8%; bottom: 41%;
+    .round3 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: -24%; bottom: 19%;
     }
 
   .fac {
         float: left;
-        position: relative;
-        top: 22%;
-        left: 19%;
+        float: left;
+        margin-top: -36%;
         color: darkgray;
   }
 
   .far {
         float: left;
-        position: relative;
-        top: 18%;
-        left: 17%;
+        float: left;
+        margin-top: -36%;
         color: purple;
   }
 
@@ -1119,7 +1142,8 @@ a {
     top: 48%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .fah_white2 {
@@ -1129,7 +1153,8 @@ a {
     top: 93%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
   }
 
   .fah_white3 {
@@ -1139,7 +1164,8 @@ a {
     top: 93%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
   }
 
 
@@ -1197,7 +1223,8 @@ a {
     top: 48%;
     color: black;
     background-clip: text;
-    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    color: transparent;
   }
 
   .fah_white:hover {
@@ -1235,14 +1262,12 @@ a {
     50% {
       opacity: 0.5;
       background-image: linear-gradient(100deg, #9356DC, #FF79DA);
-      -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
     }
     100% {
       opacity: 1;
       background-image: linear-gradient(100deg, #9356DC, #FF79DA);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+     -webkit-text-fill-color: transparent;
     }
   }
 
@@ -1327,8 +1352,9 @@ a {
   }
 
   .fa_resto{
-    float: left;
+    /* float: left; */
     color: #fff;
+    display: inline;
   }
 
   .icone_resto {
@@ -1337,11 +1363,22 @@ a {
     column-gap: 1%;
   }
 
+  .fa_resto, .icone_resto {
+    display: inline;
+    margin-right: 5px;
+  }
+
+
   .icone_partenariat {
     display: flex;
     flex-direction:row;
     column-gap: 1%;
     color: #fff;
+  }
+
+  .icone_partenariat, .fa-solid {
+    display: inline;
+    margin-right: 5px;
   }
 
   a {
@@ -1385,48 +1422,39 @@ a {
     height: 100px;
     opacity: 1;
     animation-name: spin;
-    -webkit-animation-name: spin;
     animation-duration: 1200ms;
-    -webkit-animation-duration: 1200ms;
     animation-timing-function: linear;
-    -webkit-animation-timing-function: linear;
     animation-iteration-count: 2;
-    -webkit-animation-iteration-count: 2;
     animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
+   
   }
 
-  @-webkit-keyframes spin {
+  /* @-webkit-keyframes spin {
     0% {
       transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
       overflow: hidden;
     }
     100% {
       transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
       visibility: hidden;
     }
-  }
+  } */
 
   @keyframes spin {
     0% {
         
       transform: rotate(0deg);
-      -webkit-transform: rotate(0deg);
-      overflow: hidden;
+     overflow: hidden;
     }
     100% {
         
       transform: rotate(360deg);
-      -webkit-transform: rotate(360deg);
       visibility: hidden;
     }
   }
   /*  ANIMATION - Page blanche Loader */
   .LoaderStart {
-    -webkit-animation: WhitePage 5s;
-            animation: WhitePage 5s;
+     animation: WhitePage 5s;
   }
 
   @-webkit-keyframes WhitePage {
@@ -1596,6 +1624,7 @@ h4 {
   color: black;
   margin: 0;
   margin-left: 37%;
+  margin-top: 10%;
 }
 
 .button_container {
@@ -1621,15 +1650,19 @@ h4 {
 }
 
 .button2 {
-    color: black;
+  color: black;
     background: rgb(243, 242, 243);
     box-shadow: 6px 6px 6px 6px rgb(232, 231, 231);
     height: 90px;
     width: 45%;
     border-radius: 15px;
     margin: 0;
-    margin-left: 20%;
-    margin-top: 5%;
+    margin: 0;
+    margin-left: 25%;
+    margin-top: 20%;
+    text-align: center;
+    justify-content: space-evenly;
+    
 }
 
 .button3 {
@@ -1641,50 +1674,58 @@ h4 {
     border-radius: 15px;
     margin: 0;
     margin-left: 42%;
-    margin-top: 5%;
-    margin-bottom: 10%;
+    margin-top: 22%;
+    margin-bottom: 20%;
+    text-align: center;
+    justify-content: space-evenly;
 }
 
-.button1, h2 {
+.button1 h2 {
+   color: black;
     font-size: 20px;
-    margin-top: 7%;
+    margin-top: -36%;
+    margin-left: 12%;
     font-weight: 650;
 }
 
-.button2, h2 {
+.button2 h2 {
+  color: black;
+  font-size: 20px;
+  margin-top: -36%;
+  margin-left: 20%;
+  font-weight: 650;
+}
+
+.button3 h2 {
+  color: black;
     font-size: 20px;
-    margin-top: 7%;
-} 
-
-.button3, h2 {
-    font-size: 20px;
-    margin-top: 7%;
+    margin-top: -36%;
+    margin-left: 20%;
 }
 
-h2 {
-  margin-left: 35%;
-  margin-top: 10%;
+/* h2 {
+  margin-left: 39%;
+  margin-top: -16%;
+} */
+
+.round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; margin-bottom: 25%;
+ margin-top: 5%; margin-left: -19%;}
+.round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em;  margin-bottom: 25%;
+  margin-top: 5%; margin-left: -19%;
+}
+.round3 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em;  margin-bottom: 25%;
+  margin-top: 5%; margin-left: -19%;
 }
 
-.round { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 10%; bottom: 70%;
-}
-.round2 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 10%; bottom: 49%;
-}
-.round3 { font: 27px Arial, sans-serif; width: 2em; height: 2em; background: #fff; border: 0.1em solid purple; color: white; background : purple ; border-radius: 50%; line-height: 2em; position: relative; right: 10%; bottom: 49%;
-}
 .fac {
       float: left;
-      position: relative;
-      top: 30%;
-      left: 15%;
+      margin-top: -38%;
       color: darkgray;
 }
 
 .far {
       float: left;
-      position: relative;
-      top: 30%;
-      left: 14%;
+      margin-top: -38%;
       color: purple;
 }
 
@@ -1863,7 +1904,8 @@ h2 {
   top: 50%;
   color: black;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .fah_white2 {
@@ -1873,7 +1915,8 @@ h2 {
   top: 94%;
   color: black;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .fah_white3 {
@@ -1883,7 +1926,8 @@ h2 {
   top: 94%;
   color: black;
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 
@@ -1938,13 +1982,16 @@ h2 {
   position: absolute;
   left: 40%;
   top: 50%;
-  color: black;
+  /* color: black; */
+  /* background-clip: text;
+  -webkit-text-fill-color: transparent; */
   background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 .fah_white:hover {
-  color: #431b1b;
+  color: #961e7a;
   animation-name: color;
   animation-duration: 7s;
   animation-iteration-count: 1;
@@ -1978,14 +2025,14 @@ h2 {
 50% {
   opacity: 0.5;
   background-image: linear-gradient(100deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 100% {
   opacity: 1;
   background-image: linear-gradient(100deg, #9356DC, #FF79DA);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-clip: text;
+ -webkit-text-fill-color: transparent;
 }
 }
 
@@ -2040,7 +2087,7 @@ left: 88%;
 
 footer {
   position: absolute;
-  bottom: -460%;
+  bottom: -549%;
   background-color: rgb(51, 54, 54);
   width: 100%;
   /* text-align: center; */
@@ -2080,11 +2127,21 @@ flex-direction:row;
 column-gap: 3%;
 }
 
+.icone_resto, .fa_resto {
+  display: inline;
+  margin-right: 5px;
+}
+
 .icone_partenariat {
 display: flex;
 flex-direction:row;
 column-gap: 3%;
 color: #fff;
+}
+
+.icone_partenariat, .fa-solid {
+  display: inline;
+  margin-right: 5px;
 }
 
 a {
@@ -2128,48 +2185,39 @@ width: 100px;
 height: 100px;
 opacity: 1;
 animation-name: spin;
--webkit-animation-name: spin;
 animation-duration: 1200ms;
--webkit-animation-duration: 1200ms;
 animation-timing-function: linear;
--webkit-animation-timing-function: linear;
 animation-iteration-count: 2;
--webkit-animation-iteration-count: 2;
 animation-fill-mode: forwards;
--webkit-animation-fill-mode: forwards;
+
 }
 
-@-webkit-keyframes spin {
+/* @-webkit-keyframes spin {
 0% {
   transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
   overflow: hidden;
 }
 100% {
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  visibility: hidden;
+   visibility: hidden;
 }
-}
+} */
 
 @keyframes spin {
 0% {
     
   transform: rotate(0deg);
-  -webkit-transform: rotate(0deg);
-  overflow: hidden;
+ overflow: hidden;
 }
 100% {
     
   transform: rotate(360deg);
-  -webkit-transform: rotate(360deg);
-  visibility: hidden;
+ visibility: hidden;
 }
 }
 /*  ANIMATION - Page blanche Loader */
 .LoaderStart {
--webkit-animation: WhitePage 5s;
-        animation: WhitePage 5s;
+   animation: WhitePage 5s;
 }
 
 @-webkit-keyframes WhitePage {
