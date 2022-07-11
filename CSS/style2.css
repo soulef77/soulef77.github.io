@@ -107,9 +107,9 @@ html, body {
   }
 
   .fah {
-    display: inline;
-    margin-left: 24%;
-  }
+    position: absolute;
+    right: 30px;
+ }
 
   .first_container {
     border-radius: 40px 40px 0 0;
@@ -167,7 +167,7 @@ html, body {
     background-color: white;
     background-color: #fff;
     border-radius: 20px;
-    padding: 5px 10px 0 10px;
+    padding: 5px 0px 0 10px;
     margin-bottom: 15px;
     position: relative;
     overflow: hidden;
@@ -289,11 +289,11 @@ html, body {
   @keyframes delay-load {
     from {
       opacity: 0;
-      /* transform: translateY(15px); */
+      transform: translateY(25px);
     }
     to {
       opacity: 1;
-      /* transform: translateY(5px); */
+      transform: translateY(5px);
     }
   }
   .menu-card h2 {
@@ -301,7 +301,7 @@ html, body {
     font-size: 20px;
     margin: 0;
     margin-left: 2%;
-    margin-top: 0%;
+    margin-top: -1%;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -362,16 +362,19 @@ html, body {
     animation-delay: 0.3S;
   }
 
-  .menu-card_content {
+  .menu-card_title {
     width: 100%;
     transition: 0.8s ease-in-out;
   }
-  .menu-card_content:hover {
+  .menu-card_title:hover {
+    display: inline-block;
+    transform: translateY(0px);
     width: calc(100% - 100px);
     transition: 0.7s ease-in-out;
   }
 
   .menu-card_title {
+   
     position: relative;
     margin-top: 5%;
     text-overflow: ellipsis;
@@ -430,7 +433,7 @@ html, body {
     width: 50%;
     margin-left: 25%;
     margin-bottom: 20%;
-    margin-top: 290%;
+    margin-top: 320%;
     color: white;
     font-weight: 600;
     font-size: 20px;
@@ -445,8 +448,11 @@ html, body {
   footer {
     background-color: rgb(51, 54, 54);
     width: 100%;
-    position: absolute;
-    bottom: -500%;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* position: absolute;
+    bottom: -500%; */
   }
 
   .footer_menu {
@@ -515,6 +521,8 @@ body {
 
 .page {
   max-width: 1400px;
+  margin-left: 10%;
+  margin-right: 10%;
 } 
 
 i {
@@ -580,11 +588,16 @@ h1, .fah {
 }
 
 .fah {
- margin-left: 31%;
+ margin-left: 28%;
+}
+
+section {
+  width: 90%;
 }
 
 .first_container {
   /* border-radius: 40px 40px 0 0; */
+  display: contents;
   background-color:rgb(251, 247, 247);
   position: absolute;
   width: 100%;
@@ -645,12 +658,12 @@ h1, .fah {
 .menu-card {
     display: flex;
     flex-direction: column;
-    row-gap: 5px;
+    /* row-gap: 5px; */
     color: black;
     background-color:white;
     background-color: #fff;
     border-radius: 20px;
-    padding: 5px 10px 0 10px;
+    padding: 5px 0px 0 10px;
     margin-bottom: 15px;
     position: relative;
     overflow: hidden;
@@ -741,7 +754,7 @@ h1, .fah {
 
         /* ANIMATION-apparition progressive */
     
-@keyframes fadein {
+/* @keyframes fadein {
 from {
     opacity:0;
     transform: translateY(15px);
@@ -750,17 +763,17 @@ to {
     opacity:1;
     transform: translateY(5px);
 }
-}
+} */
 
     
 @keyframes delay-load {
 from {
   opacity: 0;
-  /* transform: translateY(15px); */
+  transform: translateY(25px);
 }
 to {
   opacity: 1;
-  /* transform: translateY(5px); */
+  transform: translateY(5px);
 }
 }
       
@@ -822,7 +835,6 @@ to {
 .fascircle::before {
   border-radius: 20px;
 }
-
 .menu-card:hover .menu-card_validate {
   right: 0px;
   transition: 0.7s ease-in-out;
@@ -831,28 +843,24 @@ to {
 .menu-card:hover .menu-card_validate i {
   animation: rotate 0.4s linear 2;
   animation-delay: 0.3S;
-  box-sizing: border-box;
 }
-.menu-card_content {
-  width: 100%;
+.menu-card_title {
+  display:run-in;
+  width: 90%;
   transition: 0.8s ease-in-out;
- 
 }
-
-.menu-card_content:hover {
- 
-  width: calc(100% - 100px);
+.menu-card_title:hover {
+  display: inline-block;
+  transform: translateY(5px);
+  width: calc(90% - 100px);
   transition: 0.7s ease-in-out;
 }
 
 .menu-card_title  {
   position: relative;
-  margin-top: 5%;
-  margin-bottom: 5%;
-  text-overflow: ellipsis;
-  /* justify-content: first baseline; */
+  margin-top: 5%; 
+ text-overflow: ellipsis;
 }
-
 .price {
   animation-fill-mode: both;
   font-weight: 700;
@@ -906,7 +914,7 @@ to {
     border-bottom: 3px solid #99E2D0;
     border-bottom-width: 5px;
     margin-bottom: 1%;
-    margin-top: 15%;
+    margin-top: 17%;
     margin-left: 2%;
   }
 
@@ -918,7 +926,7 @@ to {
   border-bottom: 3px solid #99E2D0;
   border-bottom-width: 5px;
   margin-bottom: 1%;
-  margin-top: 15%;
+  margin-top: 14%;
   margin-left: 2%;
 }
 
@@ -929,9 +937,9 @@ to {
   border-radius: 20px;
   height: 80px;
   width: 24%;
-  margin-left: 36%;
+  margin-left: 41%;
   margin-bottom: 20%;
-  margin-top: 75%;
+  margin-top: 15%;
   color: white;
   font-weight: 600;
   font-size: 20px;
@@ -948,8 +956,11 @@ to {
 footer {
   background-color: rgb(51, 54, 54);
   width: 100%;
-  position: absolute; 
-  bottom: -350%;
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* position: absolute; 
+  bottom: -350%; */
 }
 
 
@@ -1057,6 +1068,11 @@ a {
       /* overflow: hidden; */
   }
   
+  section {
+    width: 90%;
+  }
+  
+
   .container {
       flex-direction: column;
       height: 100%;
@@ -1177,7 +1193,7 @@ a {
       background-color:white;
       background-color: #fff;
       border-radius: 20px;
-      padding: 25px 10px 0 5px;
+      padding: 25px 0px 0 5px;
       margin-bottom: 25px;
       position: relative;
       overflow: hidden;
@@ -1291,11 +1307,11 @@ a {
   @keyframes delay-load {
   from {
     opacity: 0;
-    /* transform: translateY(15px); */
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
-    /* transform: translateY(5px); */
+    transform: translateY(5px);
   }
   }
         
@@ -1366,19 +1382,22 @@ a {
     animation: rotate 0.4s linear 2;
     animation-delay: 0.3S;
   }
-  .menu-card_content {
+  .menu-card_title {
     width: 100%;
     transition: 0.8s ease-in-out;
   }
-  .menu-card_content:hover {
+  .menu-card_title:hover {
+    display: inline-block;
+    transform: translateY(5px);
     width: calc(100% - 100px);
     transition: 0.7s ease-in-out;
   }
   
-  .menu-card_title  {
+  .menu-card_title {
+    
     position: relative;
     margin-top: 5%; 
-   text-overflow: ellipsis;
+    text-overflow: ellipsis;
   }
   
   .price {
@@ -1476,8 +1495,11 @@ a {
   footer {
     background-color: rgb(51, 54, 54);
     width: 100%;
-    position: absolute; 
-    bottom: -350%;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* position: absolute; 
+    bottom: -350%; */
   }
   
   

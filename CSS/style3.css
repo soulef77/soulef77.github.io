@@ -89,10 +89,12 @@ html, body {
     display: inline;
   }
 
-  .fah {
-    display: inline;
-    margin-left: 10%;
-  }
+
+    .fah {
+      position: absolute;
+      right: 30px;
+   }
+  
 
   .first_container {
     border-radius: 40px 40px 0 0;
@@ -151,7 +153,7 @@ html, body {
     background-color: white;
     background-color: #fff;
     border-radius: 20px;
-    padding: 5px 10px 0 10px;
+    padding: 5px 0px 0 10px;
     margin-bottom: 15px;
     position: relative;
     overflow: hidden;
@@ -259,21 +261,23 @@ html, body {
   @keyframes fadein {
     from {
       opacity: 0;
-      transform: translateY(15px);
+      transform: translateY(5px);
     }
     to {
       opacity: 1;
-      transform: translateY(5px);
+      transform: translateY(15px);
     }
   }
   @keyframes delay-load {
     from {
       opacity: 0;
-      /* transform: translateY(15px); */
+      /* margin-top: 45px; */
+      transform: translateY(25px);
     }
     to {
       opacity: 1;
-      /* transform: translateY(5px); */
+      /* margin-top: 15px; */
+      transform: translateY(5px);
     }
   }
   
@@ -411,7 +415,7 @@ html, body {
     width: 50%;
     margin-left: 25%;
     margin-bottom: 20%;
-    margin-top: 320%;
+    margin-top: 270%;
     color: white;
     font-weight: 600;
     font-size: 20px;
@@ -426,8 +430,11 @@ html, body {
   footer {
     background-color: rgb(51, 54, 54);
     width: 100%;
-    position: absolute;
-    bottom: -600%;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* position: absolute;
+    bottom: -450%; */
   }
 
   .footer_menu {
@@ -507,6 +514,8 @@ body {
 
 .page {
   max-width: 1400px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 i {
@@ -575,7 +584,7 @@ h1, .fah {
 }
 
 .fah {
- margin-left: 31%;
+ margin-left: 25%;
 }
 
 .first_container {
@@ -624,7 +633,7 @@ h1, .fah {
 }
 
 .section_menu {
-  flex: 1 1 25%;
+  flex: 1 1 20%;
 }
 
 @keyframes rotate {
@@ -645,7 +654,7 @@ h1, .fah {
     background-color:white;
     background-color: #fff;
     border-radius: 20px;
-    padding: 5px 10px 0 10px;
+    padding: 5px 0px 0 10px;
     margin-bottom: 15px;
     position: relative;
     overflow: hidden;
@@ -656,7 +665,7 @@ h1, .fah {
     border-radius: 25px;
     border: none;
     margin: 0;
-    margin-left: 5%;
+    margin-left: 0%;
     margin-top: 5%;
 }
 /* 
@@ -747,11 +756,11 @@ to {
 @keyframes delay-load {
 from {
   opacity: 0;
-  /* transform: translateY(15px); */
+  transform: translateY(25px);
 }
 to {
   opacity: 1;
-  /* transform: translateY(5px); */
+  transform: translateY(5px);
 }
 }
       
@@ -823,16 +832,18 @@ to {
   animation: rotate 0.4s linear 2;
   animation-delay: 0.3S;
 }
-.menu-card_content {
+.menu-card_title {
   width: 100%;
   transition: 0.8s ease-in-out;
 }
-.menu-card_content:hover {
+.menu-card_title:hover {
   width: calc(100% - 100px);
   transition: 0.7s ease-in-out;
 }
 
-.menu-card_title  {
+.menu-card_title:hover  {
+  display: inline-block;
+  transform: translateY(0px);
   position: relative;
   text-overflow: ellipsis;
   /* justify-content: first baseline; */
@@ -891,7 +902,7 @@ to {
     border-bottom: 3px solid #99E2D0;
     border-bottom-width: 5px;
     margin-bottom: 1%;
-    margin-top: 15%;
+    margin-top: 13%;
     margin-left: 2%;
   }
 
@@ -933,9 +944,10 @@ to {
 footer {
   background-color: rgb(51, 54, 54);
   width: 100%;
-  position: absolute; 
-  bottom: -350%;
-}
+  margin-top: 100px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+ } 
 
 
 .footer_menu  {
@@ -1043,17 +1055,21 @@ a {
       width: 100%;
       height: 100%;
       object-fit: cover;
-      /* overflow: hidden; */
+      overflow: hidden;
   }
   
+  section {
+      width: 100%;
+  }
   .container {
       flex-direction: column;
       height: 100%;
-      width: 100%;
-      /* justify-content: space-between; */
+      max-width: 100%;
+      justify-content: space-between;
       
   }
   .menu_container {
+    flex: 1;
       /* display: flex;
       flex-direction: row; */
       /* background-color:rgb(251, 247, 247);
@@ -1129,19 +1145,19 @@ a {
   .col_container {
     display: flex;
     flex-direction: column;
-    flex: 1 1 100%;
-    column-gap: 30px;
-    row-gap: 25px;
+    flex: 1 1 50%;
+    /* column-gap: 30px;
+    row-gap: 25px; */
   }
   
   .section_menu {
     display: flex;
     flex-direction: row;
-    flex: 1 1 25%;
+    /* flex: 1 1 25%; */
     row-gap: 20px;
     column-gap: 30px;
-    justify-content: space-between;
-    vertical-align: middle;
+    justify-content: center;
+    vertical-align:middle;
   }
   
   @keyframes rotate {
@@ -1162,12 +1178,12 @@ a {
       background-color:white;
       background-color: #fff;
       border-radius: 20px;
-      padding: 25px 10px 0 5px;
+      padding: 25px 0px 0 5px;
       margin-bottom: 25px;
       position: relative;
       overflow: hidden;
       z-index: 0;
-      width: 85%;
+      width: 65%;
       height: 100px;
       box-shadow: -1px 6px 10px 2px rgba(166, 166, 166, 0.34);
       border-radius: 25px;
@@ -1264,11 +1280,11 @@ a {
   @keyframes delay-load {
   from {
     opacity: 0;
-    /* transform: translateY(15px); */
+    transform: translateY(25px);
   }
   to {
     opacity: 1;
-    /* transform: translateY(5px); */
+    transform: translateY(5px);
   }
   }
         
@@ -1339,16 +1355,18 @@ a {
     animation: rotate 0.4s linear 2;
     animation-delay: 0.3S;
   }
-  .menu-card_content {
+  .menu-card_title {
     width: 100%;
     transition: 0.8s ease-in-out;
   }
-  .menu-card_content:hover {
+  .menu-card_title:hover {
     width: calc(100% - 100px);
     transition: 0.7s ease-in-out;
   }
   
-  .menu-card_title  {
+  .menu-card_title:hover  {
+    display: inline-block;
+    transform: translateY(0px);
     position: relative;
     margin-top: 5%; 
    text-overflow: ellipsis;
@@ -1418,7 +1436,7 @@ a {
     border-bottom: 3px solid #99E2D0;
     border-bottom-width: 5px;
     margin-bottom: 1%;
-    margin-top: 10%;
+    margin-top: 83%;
     margin-left: 2%;
   }
   
@@ -1449,8 +1467,11 @@ a {
   footer {
     background-color: rgb(51, 54, 54);
     width: 100%;
-    position: absolute; 
-    bottom: -280%;
+    margin-top: 100px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    /* position: absolute; 
+    bottom: -350%; */
   }
   
   
